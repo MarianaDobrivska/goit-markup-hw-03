@@ -20,14 +20,32 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 img {
   display: block;
 }
 
-/* Logo */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* --------------- Header ------------------ */
 
 .logo {
   font-family: Raleway, sans-serif;
@@ -43,15 +61,33 @@ img {
 
 .header.logo {
   color: var(--logo-color-black);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .footer.logo {
   color: var(--primary-white-color);
 }
 
-/* Header */
+header {
+  border: 1px solid #ececec;
+}
+/* ---------------- nav design --------------- */
 
-/* nav design */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+}
 
 .site-nav .link {
   color: var(--primary-text-color);
@@ -61,6 +97,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav .link:hover,
@@ -72,7 +114,15 @@ img {
   color: var(--primary-hover-color);
 }
 
-/* contact design */
+/* --------------- contact design -------------- */
+
+.contact {
+  display: flex;
+}
+
+.mail {
+  margin-right: 50px;
+}
 
 .contact .link {
   color: var(--secondary-text-color);
@@ -81,6 +131,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact .link:hover,
@@ -88,10 +140,13 @@ img {
   color: var(--primary-hover-color);
 }
 
-/* hero */
+/* -------------- HERO ----------------- */
 
 .main-hero {
   background: var(--hero-background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -102,6 +157,10 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 696px;
 }
 
 .button {
@@ -112,11 +171,16 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  border-color: transparent;
 
   cursor: pointer;
-
-  margin: 0 auto;
   display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 216px;
+  padding: 10px 32px;
+  border-radius: 4px;
 
   background-color: var(--primary-hover-color);
   color: var(--primary-white-color);
@@ -130,11 +194,37 @@ img {
 
 /* benefit section */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefit-container {
+  display: flex;
+}
+
+.benefit-list {
+  display: flex;
+  flex-grow: 1;
+  gap: 30px;
+  /* flex-basis: calc((100% - 90px) / 4); */
+}
+
 .benefit-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .benefit-text {
