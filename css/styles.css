@@ -31,7 +31,11 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 img {
@@ -171,7 +175,7 @@ header {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  border-color: transparent;
+  border: none;
 
   cursor: pointer;
   display: block;
@@ -181,6 +185,7 @@ header {
   min-width: 216px;
   padding: 10px 32px;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: var(--primary-hover-color);
   color: var(--primary-white-color);
@@ -192,7 +197,7 @@ header {
   color: var(--primary-white-color);
 }
 
-/* benefit section */
+/* --------------  benefit section ------------ */
 
 .visually-hidden {
   position: absolute;
@@ -208,15 +213,25 @@ header {
   overflow: hidden;
 }
 
+.benefit-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .benefit-container {
-  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .benefit-list {
   display: flex;
-  flex-grow: 1;
+  justify-content: space-between;
   gap: 30px;
-  /* flex-basis: calc((100% - 90px) / 4); */
+}
+
+.benefit-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .benefit-title {
@@ -233,22 +248,44 @@ header {
   line-height: 1.71;
 }
 
-/* works section */
+/* ----------------WORKS section ------------- */
+
+.list-works {
+  display: flex;
+  /* gap: 30px; */
+  justify-content: space-between;
+}
 
 .works-section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
 
-/* team section */
+/* --------------- TEAM section ---------------*/
+
+.list-team {
+  display: flex;
+  gap: 30px;
+}
+
+.list-team-item {
+  background-color: var(--primary-white-color);
+  justify-content: space-between;
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .team-section-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team-section-title {
@@ -256,6 +293,7 @@ header {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 30px;
 }
 
 .team-section-text {
@@ -263,6 +301,8 @@ header {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 10px;
+  padding-bottom: 30px;
 }
 
 /* background for main section */
@@ -277,6 +317,15 @@ header {
 }
 
 /* footer */
+
+.footer.logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-items:not(:last-child) {
+  margin-bottom: 9px;
+}
 
 .address {
   color: var(--primary-white-color);
@@ -307,8 +356,18 @@ header {
   color: var(--email-telephone-text-color);
 }
 
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .footer-section {
   background: var(--hero-background-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 /* PORTFOLIO PAGE */
