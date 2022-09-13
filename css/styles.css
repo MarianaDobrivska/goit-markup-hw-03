@@ -250,6 +250,10 @@ header {
 
 /* ----------------WORKS section ------------- */
 
+.works-section {
+  padding-top: 0;
+}
+
 .list-works {
   display: flex;
   /* gap: 30px; */
@@ -288,12 +292,16 @@ header {
   margin-bottom: 50px;
 }
 
+.team-section-card {
+  padding: 30px;
+}
+
 .team-section-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-section-text {
@@ -301,8 +309,6 @@ header {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 10px;
-  padding-bottom: 30px;
 }
 
 /* background for main section */
